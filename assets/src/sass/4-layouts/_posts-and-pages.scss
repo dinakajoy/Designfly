@@ -1,0 +1,171 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 24px;
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 24px 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 24px;
+}
+
+.site-main {
+	padding: 15px;
+}
+
+.designfly-pagination {
+	text-align: right;
+}
+
+// All Post Styles
+.post {
+	margin: 50px auto;
+}
+
+.entry-header {
+	background-color: $gray-100;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	&:hover {
+		background-color: $red;
+	}
+}
+
+.entry-date {
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+	margin-right: 30px;
+	padding: 10px 20px;
+	color: $white;
+}
+
+.entry-title a {
+	color: $white;
+}
+
+.content__img {
+	width: 220px;
+	float: left;
+	margin-right: 20px;
+	img {
+		height: 170px;
+		border-radius: 10px;
+	}
+}
+
+.entry-content {
+	width: auto;
+}
+
+.clr {
+	clear: both;
+}
+
+.entry-full-content {
+	width: 100%;
+}
+
+.entry-content {
+	margin: 0 auto;
+	p {
+		font-size: 14px;
+		line-height: 21px;
+		color: $gray;
+	}
+}
+
+.entry-meta {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 13px;
+	a {
+		color: $red;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.moretag {
+	color: $red;
+	display: block;
+	margin: 10px 0;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.entry-meta,
+.main-content__title,
+.content {
+	padding: 10px;
+	border-bottom: 1px solid $gray;
+}
+.main-content {
+	margin-bottom: 30px;
+}
+.main-content__title {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	padding: 20px;
+	font-size: 45px;
+	text-shadow: 2px 2px $white;
+	color: $gray;
+}
+
+.page-numbers {
+	color: $gray-100;
+	margin: 0 5px;
+	font-size: 16px;
+}
+.page-numbers.current {
+	background-color: $red;
+	color: $white;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+
+.fa-caret-right,
+.fa-caret-left {
+	font-size: 20px;
+}
+
+.nav-links {
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+// Single Post Styles
+.single-entry-title {
+	color: $gray;
+}
+.single-entry-content {
+	margin: 20px auto;
+	img {
+		max-height: 300px;
+		border-radius: 3px;
+	}
+}

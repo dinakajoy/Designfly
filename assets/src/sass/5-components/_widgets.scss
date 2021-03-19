@@ -1,0 +1,58 @@
+.widget {
+	// margin: 0 0 map-get($grid-column-gutter, small);
+	margin: 0;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+.widget-sidebar {
+	clear: both;
+	padding: map-get($grid-column-gutter, small) / 2;
+}
+
+.widget-media {
+	display: grid;
+	grid-template-columns: 45px auto;
+	grid-gap: 10px;
+	font-size: 12px;
+	margin: 20px auto;
+	img {
+		height: 45px;
+	}
+}
+
+.widget-media-title {
+	font-size: 14px;
+}
+
+.widget-media-author {
+	color: $red;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.widget-portfolio {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	img {
+		height: 60px;
+		border-radius: 5px;
+	}
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}
+
+.widget-title {
+	font-size: 25px;
+	color: $gray;
+	text-shadow: 2px 2px $white;
+	border-bottom: 1px solid $gray;
+}

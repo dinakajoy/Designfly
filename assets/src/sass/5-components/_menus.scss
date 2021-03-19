@@ -1,0 +1,142 @@
+/*==============================
+    Main Menu
+===============================*/
+.designfly-main-navigation {
+	position: relative;
+	top: 0;
+	clear: both;
+}
+
+.desktop-nav {
+	display: none;
+}
+
+.dashicons-menu {
+	display: block;
+	cursor: pointer;
+	font-size: 30px;
+	margin-right: 30px;
+}
+
+.primary-menu {
+	list-style-type: none;
+}
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+	.closebtn {
+		position: absolute;
+		top: 40px;
+		right: 60px;
+		font-size: 60px;
+	}
+}
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	font-weight: 600;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+	color: #f1f1f1;
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+	.site-main & {
+		margin: 0 0 24px;
+		overflow: hidden;
+	}
+
+	& .nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	& .nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+/* Media Queries */
+@media screen and (min-width: 950px) {
+	.desktop-nav {
+		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+	}
+
+	.dashicons-menu,
+	.mobile-nav {
+		display: none;
+	}
+
+	.primary-menu {
+		// list-style: none;
+		margin: 0;
+		// padding-left: 0;
+		// float: right;
+		// z-index: 99999;
+		// left: 0;
+		// top: 0;
+		// position: relative;
+		// z-index: 1;
+		// right: 0;
+		// width: 100%;
+		li {
+			display: inline;
+			padding: 0;
+		}
+		a {
+			width: 200px;
+			color: $gray;
+			font-weight: 700;
+			font-size: 14px;
+			text-decoration: none;
+			padding: 10px;
+		}
+		a:hover,
+		a.focus,
+		.current_page_item > a,
+		.current-menu-item > a,
+		.current_page_ancestor > a {
+			background-color: $color__link-hover;
+			color: $white;
+			font-size: 14px;
+			padding: 10px;
+			border-radius: 3px;
+		}
+
+		.current_page_item > a:hover,
+		.current_page_item > a:focus {
+			color: $white;
+		}
+	}
+}
